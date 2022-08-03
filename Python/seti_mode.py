@@ -3,9 +3,6 @@ from pickle import GLOBAL
 from tkinter import image_types
 import cv2
 import requests
-import base64
-import json
-import numpy as np
 import asyncio
 
 #API Configuration for SETI
