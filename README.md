@@ -7,4 +7,4 @@ Documentation for the API is available at [https://docs.getsmarteye.mobi/socket/
 
 ### Python
 
-[SETI Mode](Python/README.md)
+[SETI Mode](Python/)
