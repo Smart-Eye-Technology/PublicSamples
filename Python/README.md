@@ -2,7 +2,7 @@
 The examples in this folder detail the use of Smart Eye Technologies API with Python. These examples were created using Python3.8.
 
 ## SETI MODE
-SETI Mode allows a developer to create a locking mechanism, wherein the application hides the user interface when multiple viewers are detected. This is specifically useful for the prevention of unautorised viewing (or shoulder surfing) of critical documents.
+SETI Mode allows a developer to create a locking mechanism, wherein the application hides the user interface when multiple viewers are detected. This is specifically useful for the prevention of unauthorized viewing (or shoulder surfing) of critical documents.
 
 ### Running the sample
 

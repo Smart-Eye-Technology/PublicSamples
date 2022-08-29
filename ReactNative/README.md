@@ -1,27 +1,37 @@
-# Python Examples
-The examples in this folder detail the use of Smart Eye Technologies API with Python. These examples were created using Python3.8.
+# Typescipt Examples
+The examples in this folder detail the use of Smart Eye Technologies API with React Native (TypeScript). These examples were created using Node/TypeScript v16.3.0.  
 
 ## SETI MODE
 SETI Mode allows a developer to create a locking mechanism, wherein the application hides the user interface when multiple viewers are detected. This is specifically useful for the prevention of unauthorized viewing (or shoulder surfing) of critical documents.
 
 ### Running the sample
-To run the samples, your environment must be setup according to [EXPO React Native Guide](https://reactnative.dev/docs/environment-setup)
 
 **Install Libraries**
-Install the Node dependencies using yarn  
+Install the NodeJs dependencies using npm
 ```shell
-yarn install
+npm i
 ```
+
+Install the Pod dependencies using
+```shell
+cd ios
+pod install
+```
+>   Note: M1 Mac users may need to run "arch --x86_64 pod install" 
 
 **Run the sample**
-Running the sample requires a IOS or Android device. Unfortunately the simulated devices do not support interaction with Cameras.  If running with IOS, you may be prompted regarding code-signing certificates. If so, you must open the ios project generated in Expo with XCode and sign the project with a valid certificate. A self-signed developer certificate should work fine if you do not possess an Apple Developer certificate.
-
 ```shell
-yarn ios
+npm run ios 
 ```
 
-or
+or  
 
 ```shell
-yarn android
+npm run android 
 ```
+
+## Using The Application
+Once the application starts it will show you either a lock screen or a document. Two values will be shown for the detection of faces.  One will represent the number of faces detected locally (via onboard TensorFlow machine learning models). The other reflects the values calculated with the SETI Mode API.  Experiment with which values are detected first and how the application behaves when no faces and multiple faces are detected.
+
+## Known Issues
+If you receive an error regarding Apple Developer code signing, you may need to open the workspace from /ios and associate a developer profile. A Free individual profile is sufficient to run the sample locally.
