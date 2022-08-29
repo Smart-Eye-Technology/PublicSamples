@@ -29,7 +29,7 @@ import FormData2 from 'form-data';
 const setiEndpoint = 'https://api.app.getsmarteye.mobi/v1';
 
 //Your SETI API Key
-const setiAPIKey = 'ZjqDO8qW7J1OfNEdmvtwl7W7RZ0UlIWi3G2dd7mm';
+const setiAPIKey = 'your-api-key';
 
 const b64toBlob = (b64Data, contentType = '', sliceSize = 512) => {
     const byteCharacters = atob(b64Data);
