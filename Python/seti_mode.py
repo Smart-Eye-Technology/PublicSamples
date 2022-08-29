@@ -7,11 +7,12 @@ import asyncio
 
 #API Configuration for SETI
 Enpoint='https://api.app.getsmarteye.mobi/v1'
-X_API_KEY='your api key value'
+X_API_KEY='ZjqDO8qW7J1OfNEdmvtwl7W7RZ0UlIWi3G2dd7mm'
 Headers={'x-api-key' : X_API_KEY,'accept': 'application/json'}
 
 #For screen lock
 seti_screen = cv2.imread("lockscreen.png")
+doc = cv2.imread("document.jpg")
 
 
 # define a video capture object (in this example we take the first capture device, usually the local camera on a laptop)
@@ -53,11 +54,11 @@ async def main():
         if not posting:
             asyncio.ensure_future(CountFaces(buffer))
             
-        await asyncio.sleep(.050)
+        await asyncio.sleep(.05)
 
         if(FACES==1):
             #Show the application
-            cv2.imshow('frame', frame)
+            cv2.imshow('frame', doc)
         else:
             #Lock the screen
             cv2.imshow('frame', seti_screen)

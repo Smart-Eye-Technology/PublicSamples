@@ -8,3 +8,7 @@ Documentation for the API is available at [https://docs.getsmarteye.mobi/](https
 ### Python
 
 [SETI Mode](Python/)
+
+### React Native (TypeScript)
+
+[SETI Mode](ReactNative/)
